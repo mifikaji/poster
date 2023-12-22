@@ -1,0 +1,176 @@
+.green{
+	background-color: #028B6A;
+}
+.blue{
+	background-color: #026FAF;
+}
+.yellow{
+	background-color: #FDA510;
+}
+.red{
+	background-color: #EF591A;
+}
+.black{
+	background-color: black;
+}
+.block1{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+}
+body{
+	width: 1440px;
+}
+
+/* стили масок */
+.masks{
+	/* width: 1920px;
+	height: 332px; */
+	width: 100%;
+	height: 17vw;
+	display: block;
+	background-image: url(../img/masks1.png);
+	animation: masks 1s steps(1) infinite;
+}
+
+/* стили линий */
+.line1, .line2, .line4{
+	height: 50px;
+	width: 100vw;
+	display: block;
+	position: relative;
+	padding: 15px 0;
+	overflow: hidden;
+}
+.line1 h1{
+	width: 3841px;
+	font-family: 'ProximaNova';
+	font-size: 36pt;
+	vertical-align: top;
+	position: absolute;
+	animation: line1 10s linear infinite;
+}
+.line2 h1{
+	width: 3856px;
+	font-family: 'ProximaNova';
+	font-size: 36pt;
+	vertical-align: top;
+	position: absolute;
+	animation: line2 10s linear infinite;
+}
+.line3 h1{
+	width: 3856px;
+	font-family: 'ProximaNova';
+	font-size: 36pt;
+	padding: 15px 0;
+	position: absolute;
+	animation: line3 10s linear infinite;
+}
+.line4 h1{
+	width: 3856px;
+	font-family: 'ProximaNova';
+	font-size: 36pt;
+	vertical-align: top;
+	position: absolute;
+	animation: line4 10s linear infinite;
+}
+
+/* block2 */
+.block2{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+.sidemask_box{
+	display: flex;
+	width: 30%;
+	height: 100%;
+}
+.sidemask{
+	transform: translateX(0);
+    transition: 0.5s;
+	min-height: 100%;
+}
+.sidemask_box:hover > .sidemask{
+	transform: translateX(-100%);
+}
+.row1{
+	display: flex;
+	flex-direction: column;
+	width: 17.5%;
+}
+.row2{
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+.star_box{
+	/* width: 17.5vw; */
+	height: 25%;
+	display: flex;
+}
+.star{
+	animation: star 3s linear infinite;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+.triangle_box{
+	/* width: 17.5vw; */
+	height: 25%;
+	display: flex;
+}
+.triangle{
+	width: 100%;
+}
+.zigzag_box{
+	/* width: 35vw; */
+	height: 15%;
+	display: flex;
+	overflow: hidden;
+}
+.eye_box{
+	/* width: 35vw; */
+	height: 35%;
+	display: flex;
+}
+.eye{
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+.row3{
+	width: 17.5%;
+}
+.sun_bg{
+	background-image: url(../img/sun_bg.svg);
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+	min-width: 100%;
+	min-height: 50%;
+	display: flex;
+}
+.sun{
+	animation: sun 6s linear infinite;
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+}
+.elements_box{
+	height: 50%;
+}
+.line3{
+	height: 10%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.zigzag2_box{
+	height: 15%;
+}
+.things_box{
+	height: 25%;
+}
+.elements2_box{
+	height: 50%;
+}
