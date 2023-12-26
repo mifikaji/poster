@@ -1,82 +1,8 @@
-/* анимация масок */
-@keyframes masks{
-	/* 0%{
-		background-position: 0 0;
-	}
-	11%{
-		background-position: 0 -332px;
-	}
-	22%{
-		background-position: 0 -664px;
-	}
-	33%{
-		background-position: 0 -996px;
-	}
-	44%{
-		background-position: 0 -1328px;
-	}
-	55%{
-		background-position: 0 -1660px;
-	}
-	66%{
-		background-position: 0 -1992px;
-	}
-	77%{
-		background-position: 0 -2324px;
-	}
-	88%{
-		background-position: 0 -2656px;
-	}
-	100%{
-		background-position: 0 -2656px;
-	} */
-	/* 0%{
-		background-position: 0 0;
-	}
-	11%{
-		background-position: 0 12.5%;
-	}
-	22%{
-		background-position: 0 25%;
-	}
-	33%{
-		background-position: 0 37.5%;
-	}
-	44%{
-		background-position: 0 50%;
-	}
-	55%{
-		background-position: 0 62.5%;
-	}
-	66%{
-		background-position: 0 75%;
-	}
-	77%{
-		background-position: 0 87.5%;
-	}
-	88%{
-		background-position: 0 100%;
-	}
-	100%{
-		background-position: 0 100%;
-	} */
-	from{
-		background-position: 0 0;
-	}
-	to {
-		background-position: 0 -798.05%;
-		}
+/* стили для анимаций */
+.masks{
+	animation: masks 1s steps(8) infinite;
 }
 
-/* анимации линий */
-@keyframes line1{
-	0%{
-		right: -1920px;
-	}
-	100%{
-		right: calc(100% - 1920px);
-	}
-}
 .line1 h1:hover{
 	animation-play-state: paused;
 }
@@ -85,14 +11,6 @@
 }
 .line1:hover > h1{
 	color: #028B6A;
-}
-@keyframes line2{
-	0%{
-		right: -1920px;
-	}
-	100%{
-		right: calc(100% - 1920px);
-	}
 }
 .line2 h1:hover{
 	animation-play-state: paused;
@@ -115,6 +33,180 @@
 .line4:hover > h1{
 	color: #FDA510;
 }
+.line5:hover > h1{
+	text-align: end;
+}
+.line6:hover > h1{
+	text-align: start;
+}
+
+.star:hover{
+	animation-play-state: paused;
+}
+
+.sun:hover{
+	animation-play-state: paused;
+}
+
+.zigzag:hover{
+	animation: shake 0.5s;
+}
+
+.element1:hover{
+	height: 45%;
+}
+.element2:hover{
+	height: 45%;
+}
+
+.zigzag2:hover{
+	animation: bounce1 1s infinite;
+}
+.zigzag2_1:hover{
+	animation: bounce1 1s infinite;
+}
+
+.element3:hover{
+	height: 45%;
+}
+.element4:hover{
+	height: 45%;
+}
+
+.thing1, .thing3{
+	animation: bounce2 5s infinite linear;
+}
+.thing2{
+	animation: bounce3 5s infinite linear;
+}
+
+.pattern1:hover{
+	background-image: url(../img/pattern1_bw.svg);
+}
+
+.pat_el1:hover{
+	background-image: url(../img/pat_el1.svg);
+}
+.pat_el2:hover{
+	background-image: url(../img/pat_el2_bw.svg);
+}
+.pat_el3:hover{
+	background-image: url(../img/pat_el3_bw.svg);
+}
+.pat_el4:hover{
+	background-image: url(../img/pat_el4.svg);
+}
+.pat_el5:hover{
+	background-image: url(../img/pat_el5.svg);
+}
+.pat_el6:hover{
+	background-image: url(../img/pat_el6.svg);
+}
+.pat_el7:hover{
+	background-image: url(../img/pat_el7.svg);
+}
+.pat_el8:hover{
+	background-image: url(../img/pat_el8.svg);
+}
+
+.pattern3{
+	animation: blink 1s steps(1) infinite;
+}
+
+.flower1, 
+.flower2, 
+.flower3, 
+.flower4, 
+.flower5, 
+.flower6{
+	animation: rotate 3s infinite linear;
+}
+.flower1:hover, 
+.flower2:hover, 
+.flower3:hover, 
+.flower4:hover, 
+.flower5:hover, 
+.flower6:hover{
+	animation-play-state: paused;
+}
+
+.wave:hover{
+	animation: shake 0.5s;
+}
+
+.runes:hover{
+	background-image: url(../img/runes2.svg);
+}
+.face:hover{
+	background-image: url(../img/face.svg);
+}
+
+.plant{
+	animation: plant_blink 1s steps(1) infinite;
+}
+
+.plant:hover{
+	animation-play-state: paused;
+}
+
+.moon{
+	animation: moon 2s steps(1) infinite;
+}
+
+.stars{
+	animation: stars 10s linear infinite;
+}
+
+
+
+/* анимация боковой маски */
+.sidemask_box:hover > .sidemask{
+	transform: translateX(-100%);
+}
+
+/* анимация глаза */
+.eye:hover{
+	transform: rotate(360deg);
+	transition: all 1s;
+}
+
+/* анимация облаков */
+.clouds:hover{
+	background-image: url(..//img/clouds2.svg);
+	animation: shake 0.5s;;
+}
+
+
+
+/* анимация масок */
+@keyframes masks{
+	from{
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 -798.05%;
+		}
+}
+
+/* анимации линий */
+@keyframes line1{
+	0%{
+		right: -1920px;
+	}
+	100%{
+		right: calc(100% - 1920px);
+	}
+}
+@keyframes line2{
+	0%{
+		right: -1920px;
+	}
+	100%{
+		right: calc(100% - 1920px);
+	}
+}
+
+/* анимация звезды */
 @keyframes star{
 	0%{
 		transform: rotate(0deg);
@@ -123,10 +215,8 @@
 		transform: rotate(360deg);
 	}
 }
-.star:hover{
-	animation-play-state: paused;
-}
 
+/* анимация солнца */
 @keyframes sun{
 	0%{
 		transform: rotate(0deg);
@@ -135,26 +225,8 @@
 		transform: rotate(-360deg);
 	}
 }
-.sun:hover{
-	animation-play-state: paused;
-}
 
-/* @keyframes zigzag{
-	from{
-		opacity: 1;
-	}
-	to{
-		opacity: 0;
-	}
-}
-.zigzag:hover{
-	animation: zigzag 0.5s linear forwards;
-} */
-
-.eye:hover{
-	transform: rotate(360deg);
-	transition: all 1s;
-}
+/* анимации вверх-вниз */
 @keyframes bounce1 {
 	0%, 20%, 60%, 100% {
 		transform: translateY(0);
@@ -202,79 +274,8 @@
 		transform: translateY(0%);
 	}
 }
-.zigzag:hover{
-	animation: shake 0.5s;
-}
-.element1:hover{
-	height: 45%;
-}
-.element2:hover{
-	height: 45%;
-}
-.zigzag2:hover{
-	animation: bounce1 1s infinite;
-}
-.zigzag2_1:hover{
-	animation: bounce1 1s infinite;
-}
-.element3:hover{
-	height: 45%;
-}
-.element4:hover{
-	height: 45%;
-}
 
-.thing1, .thing3{
-	animation: bounce2 5s infinite linear;
-}
-.thing2{
-	animation: bounce3 5s infinite linear;
-}
-/* @keyframes fly1 {
-    0% {
-        top: -20%;
-        left: 10%;
-    }
-    50% {
-        top: -40%;
-        left: 0%;
-    }
-    100% {
-        top: -20%;
-        left: 10%;
-    }
-} */
-.pattern1:hover{
-	background-image: url(../img/pattern1_bw.svg);
-}
-.pat_el1:hover{
-	background-image: url(../img/pat_el1.svg);
-}
-.pat_el2:hover{
-	background-image: url(../img/pat_el2_bw.svg);
-}
-.pat_el3:hover{
-	background-image: url(../img/pat_el3_bw.svg);
-}
-.pat_el4:hover{
-	background-image: url(../img/pat_el4.svg);
-}
-.pat_el5:hover{
-	background-image: url(../img/pat_el5.svg);
-}
-.pat_el6:hover{
-	background-image: url(../img/pat_el6.svg);
-}
-.pat_el7:hover{
-	background-image: url(../img/pat_el7.svg);
-}
-.pat_el8:hover{
-	background-image: url(../img/pat_el8.svg);
-}
-
-.pattern3{
-	animation: blink 1s steps(1) infinite;
-}
+/* анимации мигания */
 @keyframes blink {
 	0%{
 		background-image: url(../img/pattern3.svg);
@@ -292,22 +293,20 @@
 		background-image: url(../img/pattern3.svg);
 	}
 }
-.flower1, 
-.flower2, 
-.flower3, 
-.flower4, 
-.flower5, 
-.flower6{
-	animation: rotate 3s infinite linear;
+@keyframes plant_blink{
+	from{
+		background-image: url(..//img/plant1.svg);
+	}
+	50%{
+		background-image: url(..//img/plant2.svg);
+	}
+	to{
+		background-image: url(..//img/plant1.svg);
+	}
 }
-.flower1:hover, 
-.flower2:hover, 
-.flower3:hover, 
-.flower4:hover, 
-.flower5:hover, 
-.flower6:hover{
-	animation-play-state: paused;
-}
+
+
+/* анимация вращения */
 @keyframes rotate{
 	0%{
 		transform: rotate(0deg);
@@ -320,9 +319,7 @@
 	}
 }
 
-.wave:hover{
-	animation: shake 0.5s;
-}
+/* анимация туда-сюда */
 @keyframes shake{
 	0% { transform: translate(1px, 1px) rotate(0deg); }
 	10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -337,41 +334,8 @@
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.runes:hover{
-	background-image: url(../img/runes2.svg);
-}
-.face:hover{
-	background-image: url(../img/face.svg);
-}
 
-.plant{
-	animation: plant_blink 1s steps(1) infinite;
-}
-@keyframes plant_blink{
-	from{
-		background-image: url(..//img/plant1.svg);
-	}
-	50%{
-		background-image: url(..//img/plant2.svg);
-	}
-	to{
-		background-image: url(..//img/plant1.svg);
-	}
-}
-.plant:hover{
-	animation-play-state: paused;
-}
-
-.line5:hover > h1{
-	text-align: end;
-}
-.line6:hover > h1{
-	text-align: start;
-}
-.moon{
-	animation: moon 2s steps(1) infinite;
-}
-
+/* анимация для луны */
 @keyframes moon{
 	from{
 		background-image: url(..//img/moon.svg);
@@ -387,9 +351,7 @@
 	}
 }
 
-.stars{
-	animation: stars 10s linear infinite;
-}
+/* анимация для звёздного неба */
 @keyframes stars{
 	0% { transform: translate(2px, 2px); }
 	10% { transform: translate(-2px, -3px); }
@@ -402,9 +364,4 @@
 	80% { transform: translate(-2px, -2px); }
 	90% { transform: translate(2px, 3px); }
 	100% { transform: translate(2px, -3px); }
-}
-
-.clouds:hover{
-	background-image: url(..//img/clouds2.svg);
-	animation: shake 0.5s;;
 }
