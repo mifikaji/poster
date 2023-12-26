@@ -13,13 +13,13 @@
 .black{
 	background-color: black;
 }
+.white{
+	background-color: white;
+}
 .block1{
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-}
-body{
-	width: 1440px;
 }
 
 /* стили масок */
@@ -30,7 +30,8 @@ body{
 	height: 17vw;
 	display: block;
 	background-image: url(../img/masks1.png);
-	animation: masks 1s steps(1) infinite;
+	animation: masks 1s steps(8) infinite;
+	background-size: 100% auto;
 }
 
 /* стили линий */
@@ -59,20 +60,27 @@ body{
 	animation: line2 10s linear infinite;
 }
 .line3 h1{
-	width: 3856px;
 	font-family: 'ProximaNova';
 	font-size: 36pt;
 	padding: 15px 0;
-	position: absolute;
-	animation: line3 10s linear infinite;
 }
 .line4 h1{
-	width: 3856px;
 	font-family: 'ProximaNova';
 	font-size: 36pt;
 	vertical-align: top;
-	position: absolute;
-	animation: line4 10s linear infinite;
+	text-align: center;
+}
+.line5 h1{
+	font-family: 'ProximaNova';
+	font-size: 36pt;
+	padding: 15px;
+}
+.line6 h1{
+	font-family: 'ProximaNova';
+	font-size: 36pt;
+	padding: 15px;
+	color: white;
+	text-align: end;
 }
 
 /* block2 */
@@ -89,7 +97,7 @@ body{
 .sidemask{
 	transform: translateX(0);
     transition: 0.5s;
-	min-height: 100%;
+	max-width: 100%;
 }
 .sidemask_box:hover > .sidemask{
 	transform: translateX(-100%);
@@ -119,15 +127,23 @@ body{
 	/* width: 17.5vw; */
 	height: 25%;
 	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 }
 .triangle{
 	width: 100%;
+	max-height: 100%;
 }
 .zigzag_box{
 	/* width: 35vw; */
 	height: 15%;
 	display: flex;
 	overflow: hidden;
+}
+.zigzag{
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
 }
 .eye_box{
 	/* width: 35vw; */
@@ -149,6 +165,7 @@ body{
 	min-width: 100%;
 	min-height: 50%;
 	display: flex;
+	overflow: hidden;
 }
 .sun{
 	animation: sun 6s linear infinite;
@@ -156,21 +173,238 @@ body{
 	margin-left: auto;
     margin-right: auto;
 }
-.elements_box{
+.elements_box, .elements_box2{
 	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.element1,
+.element2,
+.element3,
+.element4{
+	height: 35%;
+	width: 100%;
 }
 .line3{
 	height: 10%;
-	display: block;
+	display: flex;
 	position: relative;
 	overflow: hidden;
+	justify-content: center;
+    align-items: center;
 }
 .zigzag2_box{
 	height: 15%;
+	display: flex;
+	flex-direction: row;
+}
+.zigzag2, .zigzag2_1{
+	width: 45%;
+	margin-left: auto;
+    margin-right: auto;
 }
 .things_box{
 	height: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
-.elements2_box{
-	height: 50%;
+.thing1{
+	width: 35%;
 }
+.thing2{
+	width: 15%;
+}
+.thing3{
+	width: 35%;
+}
+.block3{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100vw;
+	height: 100vh;
+}
+.patterns{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	height: 95%;
+}
+.pattern1{
+	background-image: url(../img/pattern1.svg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 35%;
+}
+.pattern2{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.pattern3{
+	background-image: url(../img/pattern3.svg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 45%;
+}
+.pat_el1{
+	background-image: url(../img/pat_el1_bw.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el2{
+	background-image: url(../img/pat_el2.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el3{
+	background-image: url(../img/pat_el3.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el4{
+	background-image: url(../img/pat_el4_bw.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el5{
+	background-image: url(../img/pat_el5_bw.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el6{
+	background-image: url(../img/pat_el6_bw.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el7{
+	background-image: url(../img/pat_el7_bw.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+.pat_el8{
+	background-image: url(../img/pat_el8_bw.svg);
+	background-repeat: no-repeat;
+	width: 10.5%;
+}
+
+
+.block4{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+.line_box{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 100%;
+}
+.flowers_box{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 25%;
+}
+.flower1, 
+.flower2, 
+.flower3, 
+.flower4, 
+.flower5, 
+.flower6{
+	width: 16%;
+}
+.wave_box{
+	display: flex;
+	width: 100%;
+	height: 25%;
+}
+.wave{
+	width: 100%;
+}
+.runes_box{
+	display: flex;
+	width: 100%;
+	height: 55%;
+}
+.runes{
+	background-image: url(..//img/runes.svg);
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.illustrations_box{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 50%;
+}
+.face_box{
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
+.face{
+	background-image: url(..//img/face2.svg);
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.plant_box{
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
+.plant{
+	background-image: url(..//img/plant1.svg);
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.block5{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+.sky_box{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 90%;
+}
+.sky{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 100%;
+}
+.moon{
+	background-image: url(..//img/moon.svg);
+	width: 100%;
+	height: 75%;
+}
+.stars_box{
+	width: 100%;
+	height: 25%;
+}
+.stars{
+	height: 100%;
+	width: 100%;
+}
+.clouds_box{
+	width: 40%;
+	height: 100%;
+}
+.clouds{
+	background-image: url(..//img/clouds.svg);
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/* flex direction - column
+и менять процентную ширину колонок на 100 и подогнать высоту + подгонять внутренние элементы */

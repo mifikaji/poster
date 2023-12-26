@@ -30,7 +30,7 @@
 	100%{
 		background-position: 0 -2656px;
 	} */
-	0%{
+	/* 0%{
 		background-position: 0 0;
 	}
 	11%{
@@ -59,7 +59,13 @@
 	}
 	100%{
 		background-position: 0 100%;
+	} */
+	from{
+		background-position: 0 0;
 	}
+	to {
+		background-position: 0 -798.05%;
+		}
 }
 
 /* анимации линий */
@@ -74,6 +80,12 @@
 .line1 h1:hover{
 	animation-play-state: paused;
 }
+.line1:hover{
+	background-color: black;
+}
+.line1:hover > h1{
+	color: #028B6A;
+}
 @keyframes line2{
 	0%{
 		right: -1920px;
@@ -85,7 +97,24 @@
 .line2 h1:hover{
 	animation-play-state: paused;
 }
-
+.line2:hover{
+	background-color: black;
+}
+.line2:hover > h1{
+	color: white;
+}
+.line3:hover{
+	background-color: black;
+}
+.line3:hover > h1{
+	color: white;
+}
+.line4:hover{
+	background-color: black;
+}
+.line4:hover > h1{
+	color: #FDA510;
+}
 @keyframes star{
 	0%{
 		transform: rotate(0deg);
@@ -110,7 +139,7 @@
 	animation-play-state: paused;
 }
 
-@keyframes zigzag{
+/* @keyframes zigzag{
 	from{
 		opacity: 1;
 	}
@@ -120,4 +149,262 @@
 }
 .zigzag:hover{
 	animation: zigzag 0.5s linear forwards;
+} */
+
+.eye:hover{
+	transform: rotate(360deg);
+	transition: all 1s;
+}
+@keyframes bounce1 {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20%);
+	}
+
+	80% {
+		transform: translateY(-10%);
+	}
+}
+@keyframes bounce2 {
+	0% {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(-5%);;
+	}
+
+	75% {
+		transform: translateY(5%);;
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+@keyframes bounce3 {
+	0% {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(10%);;
+	}
+
+	75% {
+		transform: translateY(-10%);;
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+.zigzag:hover{
+	animation: shake 0.5s;
+}
+.element1:hover{
+	height: 45%;
+}
+.element2:hover{
+	height: 45%;
+}
+.zigzag2:hover{
+	animation: bounce1 1s infinite;
+}
+.zigzag2_1:hover{
+	animation: bounce1 1s infinite;
+}
+.element3:hover{
+	height: 45%;
+}
+.element4:hover{
+	height: 45%;
+}
+
+.thing1, .thing3{
+	animation: bounce2 5s infinite linear;
+}
+.thing2{
+	animation: bounce3 5s infinite linear;
+}
+/* @keyframes fly1 {
+    0% {
+        top: -20%;
+        left: 10%;
+    }
+    50% {
+        top: -40%;
+        left: 0%;
+    }
+    100% {
+        top: -20%;
+        left: 10%;
+    }
+} */
+.pattern1:hover{
+	background-image: url(../img/pattern1_bw.svg);
+}
+.pat_el1:hover{
+	background-image: url(../img/pat_el1.svg);
+}
+.pat_el2:hover{
+	background-image: url(../img/pat_el2_bw.svg);
+}
+.pat_el3:hover{
+	background-image: url(../img/pat_el3_bw.svg);
+}
+.pat_el4:hover{
+	background-image: url(../img/pat_el4.svg);
+}
+.pat_el5:hover{
+	background-image: url(../img/pat_el5.svg);
+}
+.pat_el6:hover{
+	background-image: url(../img/pat_el6.svg);
+}
+.pat_el7:hover{
+	background-image: url(../img/pat_el7.svg);
+}
+.pat_el8:hover{
+	background-image: url(../img/pat_el8.svg);
+}
+
+.pattern3{
+	animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+	0%{
+		background-image: url(../img/pattern3.svg);
+	}
+	40%{
+		background-image: url(../img/pattern3_bw.svg);
+	}
+	60%{
+		background-image: url(../img/pattern3.svg);
+	}
+	80%{
+		background-image: url(../img/pattern3_bw.svg);
+	}
+	100%{
+		background-image: url(../img/pattern3.svg);
+	}
+}
+.flower1, 
+.flower2, 
+.flower3, 
+.flower4, 
+.flower5, 
+.flower6{
+	animation: rotate 3s infinite linear;
+}
+.flower1:hover, 
+.flower2:hover, 
+.flower3:hover, 
+.flower4:hover, 
+.flower5:hover, 
+.flower6:hover{
+	animation-play-state: paused;
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	  }
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.wave:hover{
+	animation: shake 0.5s;
+}
+@keyframes shake{
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.runes:hover{
+	background-image: url(../img/runes2.svg);
+}
+.face:hover{
+	background-image: url(../img/face.svg);
+}
+
+.plant{
+	animation: plant_blink 1s steps(1) infinite;
+}
+@keyframes plant_blink{
+	from{
+		background-image: url(..//img/plant1.svg);
+	}
+	50%{
+		background-image: url(..//img/plant2.svg);
+	}
+	to{
+		background-image: url(..//img/plant1.svg);
+	}
+}
+.plant:hover{
+	animation-play-state: paused;
+}
+
+.line5:hover > h1{
+	text-align: end;
+}
+.line6:hover > h1{
+	text-align: start;
+}
+.moon{
+	animation: moon 2s steps(1) infinite;
+}
+
+@keyframes moon{
+	from{
+		background-image: url(..//img/moon.svg);
+	}
+	33%{
+		background-image: url(..//img/moon2.svg);
+	}
+	66%{
+		background-image: url(..//img/moon3.svg);
+	}
+	to{
+		background-image: url(..//img/moon.svg);
+	}
+}
+
+.stars{
+	animation: stars 10s linear infinite;
+}
+@keyframes stars{
+	0% { transform: translate(2px, 2px); }
+	10% { transform: translate(-2px, -3px); }
+	20% { transform: translate(-4px, 0px); }
+	30% { transform: translate(4px, 3px); }
+	40% { transform: translate(2px, -2px); }
+	50% { transform: translate(2px, 3px); }
+	60% { transform: translate(-4px, 2px); }
+	70% { transform: translate(4px, 2px); }
+	80% { transform: translate(-2px, -2px); }
+	90% { transform: translate(2px, 3px); }
+	100% { transform: translate(2px, -3px); }
+}
+
+.clouds:hover{
+	background-image: url(..//img/clouds2.svg);
+	animation: shake 0.5s;;
 }
