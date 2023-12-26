@@ -17,6 +17,7 @@
 	}
 	.block4{
 		max-height: 100vh;
+		flex-direction: column;
 	}
 	.block5{
 		max-height: 100vh;
@@ -56,6 +57,7 @@
 	}
 	.block4{
 		max-height: 100vh;
+		flex-direction: column;
 	}
 	.block5{
 		max-height: 100vh;
