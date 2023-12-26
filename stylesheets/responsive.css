@@ -1,0 +1,77 @@
+@media screen and (min-width: 360px) and (max-width: 768px) {
+	.sky_box{
+		flex-direction: column;
+	}
+	.sky,
+	.moon,
+	.stars_box,
+	.clouds_box{
+		width: 100%;
+	}
+
+	.block2{
+		height: 80vh;
+	}
+	.block3{
+		max-height: 60vh;
+	}
+	.block4{
+		max-height: 100vh;
+	}
+	.block5{
+		max-height: 100vh;
+	}
+	
+	.sky,
+	.moon,
+	.stars_box,
+	.clouds_box,
+	.line_box,
+	.illustrations_box{
+		min-width: 100vw;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 414px) {
+	.line3 h1,
+	.line4 h1,
+	.line5 h1,
+	.line6 h1{
+		font-size: 12pt;
+	}
+	.line4{
+		padding: 15px 0 0 0;
+	}
+	.line5,
+	.line6{
+		padding:0;
+	}
+	.sidemask_box_{
+		width: 100%;
+	}
+	.block2{
+		height: 35vh;
+	}
+	.block3{
+		max-height: 45vh;
+	}
+	.block4{
+		max-height: 100vh;
+	}
+	.block5{
+		max-height: 100vh;
+	}
+
+	.sky_box,
+	.block4{
+		flex-direction: column;
+	}
+
+	.sky,
+	.moon,
+	.stars_box,
+	.clouds_box,
+	.line_box,
+	.illustrations_box{
+		min-width: 100vw;
+	}
+}

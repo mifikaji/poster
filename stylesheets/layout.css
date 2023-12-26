@@ -340,6 +340,7 @@
 .runes{
 	background-image: url(..//img/runes.svg);
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 100%;
 }
 /* столбец справа */
@@ -357,6 +358,7 @@
 .face{
 	background-image: url(..//img/face2.svg);
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 100%;
 }
 .plant_box{
@@ -367,6 +369,7 @@
 .plant{
 	background-image: url(..//img/plant1.svg);
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 100%;
 }
 
@@ -391,6 +394,8 @@
 }
 .moon{
 	background-image: url(..//img/moon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 100%;
 	height: 75%;
 }
@@ -408,6 +413,8 @@
 }
 .clouds{
 	background-image: url(..//img/clouds.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 	height: 100%;
 	width: 100%;
 }
